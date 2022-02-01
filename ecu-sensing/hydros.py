@@ -1,5 +1,17 @@
-# Main class to gather readings from the Hydros 21 / Decagon CDT-10 water sensors
-# Author: Colby Sawyer 2-1-2022
+"""
+`hydros`
+================================================================================
+Python library for Hydros21 or Decaegon CDT-10 water level sensor.
+* Author(s): Colby Sawyer
+Implementation Notes
+--------------------
+**Hardware:**
+* `Hydros 21 Conductivity, Temperature, and Depth Sensor <https://www.metergroup.com/en/meter-environment/products/hydros-21-water-level-sensor-conductivity-temperature-depth>`_
+
+**Software and Dependencies:**
+
+"""
+
 
 import serial.tools.list_ports
 import serial
