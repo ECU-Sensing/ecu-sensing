@@ -11,33 +11,27 @@ Implementation Notes
 **Software and Dependencies:**
 
 """
-
-
 import serial.tools.list_ports
 import serial
 import time
 import re
 
+class Hydros:
+    """Driver for Hydros 12 or Decagon CDT-10 water level sensors
 
-def parse_reading(val):
-    """Takes string of values from sensor and parses them into String list
-
-    Args:
-        val (String): [Unparsed string containing multiple reading from sensor ex. "0+40+24.4-140"]
+    Raises:
+        ValueError: [Throws error if device is not found]
+        ValueError: [Throws error if device readings are not properly formatted after parsing (invalid readings)]
 
     Returns:
-        [String]: [Parsed list of strings each corresponding to a returned measurement ex. ["0","+40","+24.4","-140"]
+        [Bytearray]: [Packaged up data to be sent via LoRa driving code]
     """
-    res = re.findall(r'[-+][0-9.]+|\D', val)
-    return res
-
-class Hydros:
     water_depth = 0
     temperature = 0
     electrical_conductivity = 0
 
     def __init__(self, water_depth=0, temperature=0, conductivity=0):
-        """[summary]
+        """Initialize instance of sensor
 
         Args:
             water_depth (int, optional): [description]. Defaults to 0.
@@ -47,6 +41,18 @@ class Hydros:
         self.water_depth = water_depth
         self.temperature = temperature
         self.electrical_conductivity = conductivity
+
+    def parse_reading(val):
+        """Takes string of values from sensor and parses them into String list
+
+        Args:
+            val (String): [Unparsed string containing multiple reading from sensor ex. "0+40+24.4-140"]
+
+        Returns:
+            [String]: [Parsed list of strings each corresponding to a returned measurement ex. ["0","+40","+24.4","-140"]
+        """
+        res = re.findall(r'[-+][0-9.]+|\D', val)
+        return res
 
     def get_data(self):
         """Collects data from the device attached to the SDI-12 USB external board
