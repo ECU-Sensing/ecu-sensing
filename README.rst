@@ -1,4 +1,4 @@
-Welcome to ECU-Sensing's documentation!
+Welcome to ECU-Sensing!
 =======================================
 
 .. image:: https://readthedocs.org/projects/ecu-sensing/badge/?version=latest
