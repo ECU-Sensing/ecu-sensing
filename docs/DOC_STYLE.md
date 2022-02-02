@@ -19,7 +19,19 @@ Main of our styling requirements mirror that of [Google Python Docstring Guideli
 #### Naming
  Our naming requirements are pulled directly from the [Google Python Docstring Guidelines](https://google.github.io/styleguide/pyguide.html). See table below.
 
- ![Google Naming Guidelines](/docs/_static/naming_google_exmaple.png)
+ |Type          | Public       | Internal    |
+ |--------------|--------------|-------------|
+ | Packages | lower_with_under ||
+ | Modules | lower_with_under | _lower_with_under|
+ | Classes| CapWords | _CapWords |
+ | Exceptions | CapWords| | 
+ | Functions | lower_with_under() | _lower_with_under()|
+ |Global/Class Constants | CAPS_WITH_UNDER | _CAPS_WITH_UNDER|
+ |Global/Class Variables | lower_with_under | _lower_with_under |
+ |Instance Variables | lower_with_under | _lower_with_under (protected) |
+ |Method name | lower_with_under() | _lower_with_under (protected) |
+ |Function/Method Parameters| lower_with_under ||
+ |Local Variables | lower_with_under ||
 
 #### Documentation
  Our documentation seeks to provide information on every aspect of the module. To accomplish this and enable collaboration we want to point out a few necessary inclusions to documentation:

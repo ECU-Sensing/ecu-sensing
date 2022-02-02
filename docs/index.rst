@@ -23,7 +23,7 @@ Table of Contents
 .. toctree::
     :caption: Contributing
     :maxdepth: 3
-
+    
     contrib
     
 .. toctree::

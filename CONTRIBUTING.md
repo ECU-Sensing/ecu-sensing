@@ -3,7 +3,7 @@
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email (sawyerco21@ecu.edu), or any other method with the owners of this repository before making a change. 
 
-Please note we have a [Code of Conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+Please note we have a [Code of Conduct](https://github.com/ECU-Sensing/ecu-sensing/blob/main/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
 ## Contribution Process
 
@@ -26,7 +26,7 @@ Happy Coding :)
 ### Contribute Documentation
 We maintain set of documentation for every included module on readthedocs.org. We utilize [Sphinx]() to do so. In order to include your module in the automatic procedures of Sphinx you must adhere to a few things:
 
-- Follow proper styling when documenting module. This includes documenting every single module you plan to include. To find more information on this coding style refer to our [DOC_STYLE.md](docs/DOC_STYLE.md)
+- Follow proper styling when documenting module. This includes documenting every single module you plan to include. To find more information on this coding style refer to our [DOC_STYLE.md](https://github.com/ECU-Sensing/ecu-sensing/blob/main/docs/DOC_STYLE.md)
 - Sphinx will need to be installed on your local machine.
     > pip install -r sphinx sphinx_rtd_theme
 - In the docs > api.rst, add a new automodule unit.
@@ -40,7 +40,7 @@ We maintain set of documentation for every included module on readthedocs.org. W
 
 - Use Sphinx to build the html files needed:
   > make html
-- You can know view the [/docs/_build/html/api.html](/docs/_build/html/api.html) to check inclusion and formatting of your documentation
+- You can know view the [/docs/_build/html/api.html](https://github.com/ECU-Sensing/ecu-sensing/blob/main/docs/api.rst) to check inclusion and formatting of your documentation
 - Congratulations! You can now commit those changes, you have successfully added documentation to your module!
   
 
