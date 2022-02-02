@@ -1,7 +1,7 @@
 """
 `hydros`
 ================================================================================
-Python library for Hydros21 or Decaegon CDT-10 water level sensor.
+Python library for Hydros21 or Decagon CDT-10 water level sensor.
 * Author(s): Colby Sawyer
 Implementation Notes
 --------------------
@@ -18,13 +18,6 @@ import re
 
 class Hydros:
     """Driver for Hydros 12 or Decagon CDT-10 water level sensors
-
-    Raises:
-        ValueError: [Throws error if device is not found]
-        ValueError: [Throws error if device readings are not properly formatted after parsing (invalid readings)]
-
-    Returns:
-        [Bytearray]: [Packaged up data to be sent via LoRa driving code]
     """
     water_depth = 0
     temperature = 0
