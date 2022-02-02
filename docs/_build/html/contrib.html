@@ -50,10 +50,7 @@
 <p class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#contribution-process">Contribution Process</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#contribute-documentation">Contribute Documentation</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#contribution-process">Contribution Process</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</a><ul>
@@ -114,7 +111,7 @@
   <section class="tex2jax_ignore mathjax_ignore" id="contributing">
 <h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline"></a></h1>
 <p>When contributing to this repository, please first discuss the change you wish to make via issue,
-email (sawyerco21&#64;ecu.edu), or any other method with the owners of this repository before making a change.</p>
+email (sawyerco21&#64;ecu.edu), or any other method with the owners of this repository.</p>
 <p>Please note we have a <a class="reference external" href="https://github.com/ECU-Sensing/ecu-sensing/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>, please follow it in all your interactions with the project.</p>
 <section id="contribution-process">
 <h2>Contribution Process<a class="headerlink" href="#contribution-process" title="Permalink to this headline"></a></h2>
@@ -123,7 +120,11 @@ email (sawyerco21&#64;ecu.edu), or any other method with the owners of this repo
 <li><p>Set up a local development environment, this includes any new sensor/hardware planned to be supported by contribution</p></li>
 <li><p>Complete development of additional module in the <strong>devices directory</strong></p></li>
 <li><p>Create test file to correspond with new module in the <strong>tests directory</strong></p></li>
-<li><p>Follow the additional steps to <a class="reference external" href="#contribute-documentation">contribute documentation</a></p></li>
+<li><p>Follow proper styling when documenting module. This includes documenting every single module you plan to include. To find more information on this coding style refer to our <a class="reference external" href="https://github.com/ECU-Sensing/ecu-sensing/blob/main/docs/DOC_STYLE.md">DOC_STYLE.md</a>.</p>
+<ul class="simple">
+<li><p><strong>Failure to adhere to these guidelines will prevent your code from being integrated. It is crucial for us to include all documentation into our ReadTheDocs reference</strong></p></li>
+</ul>
+</li>
 <li><p>Submit pull request, make sure to identify:</p>
 <ol class="arabic simple">
 <li><p>Your Contact (Name, Email/Phone)</p></li>
@@ -135,37 +136,6 @@ email (sawyerco21&#64;ecu.edu), or any other method with the owners of this repo
 <li><p>Look out for our response</p></li>
 </ol>
 <p>Happy Coding :)</p>
-<section id="contribute-documentation">
-<h3>Contribute Documentation<a class="headerlink" href="#contribute-documentation" title="Permalink to this headline"></a></h3>
-<p>We maintain set of documentation for every included module on readthedocs.org. We utilize <span class="xref myst">Sphinx</span> to do so. In order to include your module in the automatic procedures of Sphinx you must adhere to a few things:</p>
-<ul>
-<li><p>Follow proper styling when documenting module. This includes documenting every single module you plan to include. To find more information on this coding style refer to our <a class="reference external" href="https://github.com/ECU-Sensing/ecu-sensing/blob/main/docs/DOC_STYLE.md">DOC_STYLE.md</a></p></li>
-<li><p>Sphinx will need to be installed on your local machine.</p>
-<blockquote>
-<div><p>pip install -r sphinx sphinx_rtd_theme</p>
-</div></blockquote>
-</li>
-<li><p>In the docs &gt; api.rst, add a new automodule unit.</p>
-<blockquote>
-<div><p>.. automodule:: devices.hydros
-:members:
-:show-inheritance:</p>
-</div></blockquote>
-<blockquote>
-<div><p>.. automodule:: devices.[NEW_DEVICE_NAME]
-:members: LEAVE BLANK
-:show-inheritance:</p>
-</div></blockquote>
-</li>
-<li><p>Use Sphinx to build the html files needed:</p>
-<blockquote>
-<div><p>make html</p>
-</div></blockquote>
-</li>
-<li><p>You can know view the <a class="reference external" href="https://github.com/ECU-Sensing/ecu-sensing/blob/main/docs/api.rst">/docs/_build/html/api.html</a> to check inclusion and formatting of your documentation</p></li>
-<li><p>Congratulations! You can now commit those changes, you have successfully added documentation to your module!</p></li>
-</ul>
-</section>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="contributor-covenant-code-of-conduct">
