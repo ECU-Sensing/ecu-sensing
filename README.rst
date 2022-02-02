@@ -9,6 +9,7 @@ Welcome to ECU-Sensing!
     :target: https://github.com/ECU-Sensing
     :alt: Project
 
-.. image: https://img.shields.io/badge/language-Python-blue
+.. image:: https://img.shields.io/badge/language-Python-blue
     :target: https://www.python.org/
     :alt: Language
+

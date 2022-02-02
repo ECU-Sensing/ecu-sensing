@@ -34,6 +34,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
+    'm2r',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -69,4 +70,7 @@ todo_include_todos = False
 
 # If this is True, todo emits a warning for each TODO entries. The default is False.
 todo_emit_warnings = True
+
+# source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
