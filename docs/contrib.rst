@@ -1,7 +1,10 @@
 Contributing
 ========================
-.. mdinclude:: ../CONTRIBUTING.md
+.. include:: ../CONTRIBUTING.md
+   :parser: myst_parser.sphinx_
 
-.. mdinclude:: ../CODE_OF_CONDUCT.md
+.. include:: ../CODE_OF_CONDUCT.md
+   :parser: myst_parser.sphinx_
 
-.. mdinclude:: DOC_STYLE.md
+.. include:: DOC_STYLE.md
+   :parser: myst_parser.sphinx_
