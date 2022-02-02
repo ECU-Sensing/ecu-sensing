@@ -19,7 +19,7 @@ Main of our styling requirements mirror that of [Google Python Docstring Guideli
 #### Naming
  Our naming requirements are pulled directly from the [Google Python Docstring Guidelines](https://google.github.io/styleguide/pyguide.html). See table below.
 
- ![Google Naming Guidelines](/docs/_static/naming_google_exmaple.png)
+ ![Google Naming Guidelines](/assets/naming_google_exmaple.png)
 
 #### Documentation
  Our documentation seeks to provide information on every aspect of the module. To accomplish this and enable collaboration we want to point out a few necessary inclusions to documentation:
