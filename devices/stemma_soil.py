@@ -1,12 +1,12 @@
 """
-`hydros`
+`stemma_soil`
 ================================================================================
 Python library for Hydros21 or Decagon CDT-10 water level sensor.
 * Author(s): Colby Sawyer
 Implementation Notes
 --------------------
 **Hardware:**
-* `Hydros 21 Conductivity, Temperature, and Depth Sensor <https://www.metergroup.com/en/meter-environment/products/hydros-21-water-level-sensor-conductivity-temperature-depth>`_
+* `Stemma Soil Sensor `_
 
 **Software and Dependencies:**
 
